@@ -3,17 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GabrielCTallerMAUI.Flexy"
              Title="Flexy">
-    <FlexLayout Direction="Row"
-            AlignItems="Center">
-        <Label Text="FlexLayout in Action" MinimumWidthRequest="100" BackgroundColor="Pink"/>
+    <ScrollView>
+    <FlexLayout Direction="Column"
+            AlignItems="Center"
+                JustifyContent="Center">
+        <Label Text="FlexLayout in Action" BackgroundColor="Pink" FontSize="200"/>
         <Label Text="Another Label" Background="Purple"/>
-        <VerticalStackLayout>
+        <HorizontalStackLayout>
+            <Image
+            Source="https://imagenes.heraldo.es/files/image_640_auto/uploads/imagenes/2020/01/24/meme-9.jpeg"
+                HeightRequest="100"
+                WidthRequest="100"/>
             <Button
                  x:Name="Boton1"
                  Text="Next Page" 
                  Clicked="B1_Clicked"
-                 VerticalOptions="Center"
-                 HorizontalOptions="Center"/>
-        </VerticalStackLayout>
+                HeightRequest="100"
+                WidthRequest="300"/>
+            <Image
+                Source="https://imagenes.heraldo.es/files/image_640_auto/uploads/imagenes/2020/01/24/meme-9.jpeg"
+                HeightRequest="100"
+                WidthRequest="100"/>
+
+        </HorizontalStackLayout>
     </FlexLayout>
+    </ScrollView>
 </ContentPage>
