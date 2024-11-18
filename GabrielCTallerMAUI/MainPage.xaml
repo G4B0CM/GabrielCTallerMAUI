@@ -22,6 +22,11 @@
             <Label Grid.Column="1"
            Grid.Row="1"
            Text="Column 1, Row 1" />
+            <Button
+                x:Name="Boton1"
+                Text="Next Page" 
+                Clicked="B1_Clicked"/>
+
         </Grid>
         
     </ScrollView>
