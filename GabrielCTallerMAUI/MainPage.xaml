@@ -6,26 +6,31 @@
     <ScrollView>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
+                <RowDefinition />
+                <RowDefinition />
                 <RowDefinition Height="50" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <Label Text="Column 0, Row 0"
-           WidthRequest="200" BackgroundColor="Red"/>
+            BackgroundColor="Red"/>
             <Label Grid.Column="1"
-           Text="Column 1, Row 0" />
+           Text="Column 1, Row 0"  BackgroundColor="Green"/>
             <Label Grid.Row="1"
-           Text="Column 0, Row 1" />
+           Text="Column 0, Row 1"  BackgroundColor="Blue"/>
             <Label Grid.Column="1"
            Grid.Row="1"
-           Text="Column 1, Row 1" />
-            <Button
+           Text="Column 1, Row 1"  BackgroundColor="Yellow"/>
+            <Button Grid.Row="2"
+                    Grid.Column="1"
                 x:Name="Boton1"
                 Text="Next Page" 
-                Clicked="B1_Clicked"/>
+                Clicked="B1_Clicked"
+                    VerticalOptions="Center"
+                HorizontalOptions="Center"
+                />
 
         </Grid>
         
