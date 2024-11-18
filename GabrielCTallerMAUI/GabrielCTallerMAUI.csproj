@@ -63,13 +63,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Gridy.xaml.cs">
-	    <DependentUpon>Gridy.xaml</DependentUpon>
+	  <Compile Update="Stack.xaml.cs">
+	    <DependentUpon>Stack.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Gridy.xaml">
+	  <MauiXaml Update="Flexy.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Stack.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
