@@ -1,13 +1,13 @@
 namespace GabrielCTallerMAUI;
 
-public partial class Flexy : ContentPage
+public partial class Absoluty : ContentPage
 {
-	public Flexy()
+	public Absoluty()
 	{
 		InitializeComponent();
 	}
     private void B1_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new Absoluty());
+        Navigation.PopToRootAsync();
     }
 }

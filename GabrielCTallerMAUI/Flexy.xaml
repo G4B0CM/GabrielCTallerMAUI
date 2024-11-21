@@ -7,7 +7,7 @@
     <FlexLayout Direction="Column"
             AlignItems="Center"
                 JustifyContent="Center">
-        <Label Text="FlexLayout in Action" BackgroundColor="Pink" FontSize="200"/>
+        <Label Text="FlexLayout in Action" BackgroundColor="Pink" FontSize="80"/>
         <Label Text="Another Label" Background="Purple"/>
         <HorizontalStackLayout>
             <Image
@@ -26,6 +26,26 @@
                 WidthRequest="100"/>
 
         </HorizontalStackLayout>
+            <VerticalStackLayout>
+                <Label 
+                    Text="Esta es una pila de texto en un Content Page Flex"
+                    FontSize="25"
+                    FontFamily="Helvetica"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Start" />
+                <Label 
+                    Text="'Es interesante programar'"
+                    FontSize="20"
+                    FontFamily="Helvetica"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Start" />
+                <Label 
+                    Text="Gabriel Calderón, 2024"
+                    FontSize="25"
+                    FontFamily="Helvetica"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Start" />
+            </VerticalStackLayout>
     </FlexLayout>
     </ScrollView>
 </ContentPage>
